@@ -1,6 +1,10 @@
  package test;
 
 
+ /**
+  * @author Jonas
+  * 
+  */
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.Test;

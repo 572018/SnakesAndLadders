@@ -29,10 +29,10 @@ public class PieceService {
 		for(int i = 0; i < 4; i++) {
 			Piece p = new Piece(Scan.sc.nextLine());
 			players.add(p);
-			if(players.get(i).getPlayerName().equals("avslutt")) {
+			if(players.get(i).getPlayerName().toLowerCase().equals("avslutt")) {
 				System.out.println("Avslutter programmet");
 				System.exit(0);
-			} else if(players.get(i).getPlayerName().equals("spill")) {
+			} else if(players.get(i).getPlayerName().toLowerCase().equals("spill")) {
 				i = 4;
 				players.remove(players.size() -1 );
 				System.out.println("Starter spill");
