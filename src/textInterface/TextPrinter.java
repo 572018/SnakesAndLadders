@@ -17,11 +17,11 @@ public class TextPrinter {
 		
 	}
 	
-	public void PrintRoll(List<Dice> list) {
-		System.out.println("The dice show: ");
-		list.stream().forEach(s ->  {
-			System.out.println(s.getValue() + " ");
-		});
+	public void PrintRoll(int sum) {
+		System.out.println("The dice show: " + sum);
+//		list.stream().forEach(s ->  {
+//			System.out.println(s.getValue() + " ");
+//		});
 	}
 	
 	public void announceWinner(Piece player) {
@@ -36,7 +36,7 @@ public class TextPrinter {
 	}
 	
 	public void shortcut(int newPosition, Piece player) {
-		System.out.println(player.getPlayerName() + " hit a shortcut");
+		System.out.println(player.getPlayerName() + " hit a ladder");
 		System.out.println(player.getPlayerName() + " moved from " + player.getBoardPosition()
 		+ " to " + newPosition);
 	}
@@ -44,7 +44,8 @@ public class TextPrinter {
 	public void cannotMoveThere(int sum, Piece player) {
 		int newPosition = player.getBoardPosition() + sum;
 		System.out.println(player.getPlayerName() + " cannot move from " 
-				+ player.getBoardPosition() + " to " + newPosition);		
+				+ player.getBoardPosition() + " to " + newPosition);
+		System.out.println(player.getPlayerName() + " stays in position " + player.getBoardPosition());
 	}
 
 	public void badShortcut(int newPosition, Piece player) {

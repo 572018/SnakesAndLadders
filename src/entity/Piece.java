@@ -17,7 +17,7 @@ public class Piece {
 	
 	public Piece(String playerName) {
 		this.playerName = playerName;
-		this.boardPosition = 0;
+		this.boardPosition = 1;
 	}
 
 	public String getPlayerName() {

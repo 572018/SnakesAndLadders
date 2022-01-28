@@ -47,7 +47,7 @@ public class SnakesAndLadderService {
 		
 	}
 	
-	private boolean playRound(Piece player) {
+	public boolean playRound(Piece player) {
 		int sum = diceService.rollDice();
 		if(player.getBoardPosition() <= 100) {
 			
@@ -67,7 +67,7 @@ public class SnakesAndLadderService {
 		}
 	}
 	
-	private void checkIfShortcut(Piece player) {
+	public void checkIfShortcut(Piece player) {
 		Map<Integer, Integer> cuts = shortcut.getShortcuts();
 		if(cuts.get(player.getBoardPosition()) != null) {
 			int newPosition = cuts.get(player.getBoardPosition());
