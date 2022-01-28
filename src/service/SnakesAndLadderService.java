@@ -8,6 +8,12 @@ import entity.SnakesAndLadders;
 import tables.Shortcuts;
 import textInterface.TextPrinter;
 
+/**
+ * 
+ * @author janwi
+ *
+ * SnakesAndLadderService does all the main operations of running the game and each round
+ */
 public class SnakesAndLadderService {
 
 	SnakesAndLadders SaL;

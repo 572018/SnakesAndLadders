@@ -6,6 +6,13 @@ import java.util.List;
 import entity.Piece;
 import entity.Scan;
 
+/**
+ * 
+ * @author janwi
+ * 
+ * Piece Service will create the players and set them to their start position
+ *
+ */
 public class PieceService {
 	
 	List<Piece> players;
@@ -21,7 +28,6 @@ public class PieceService {
 		
 		for(int i = 0; i < 4; i++) {
 			Piece p = new Piece(Scan.sc.nextLine());
-			p.setID(i+1);
 			players.add(p);
 			if(players.get(i).getPlayerName().equals("avslutt")) {
 				System.out.println("Avslutter programmet");

@@ -2,6 +2,15 @@ package entity;
 
 import java.util.List;
 
+/**
+ * 
+ * @author janwi
+ *
+ * All the components are connected in this class
+ * 
+ * @param board - The board that contains the squares
+ * @param players - list of all the players
+ */
 public class SnakesAndLadders {
 	
 	Board board;

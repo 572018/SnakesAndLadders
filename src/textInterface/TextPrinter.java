@@ -2,6 +2,13 @@ package textInterface;
 
 import entity.Piece;
 
+/**
+ * 
+ * @author janwi
+ *
+ * All text the interface prints
+ */
+
 public class TextPrinter {
 
 	
