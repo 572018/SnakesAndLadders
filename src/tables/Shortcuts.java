@@ -7,6 +7,7 @@ import java.util.Map;
  * 
  * @author Jonas
  *
+ * The snakes and ladders
  */
 public class Shortcuts {
 	

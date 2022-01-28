@@ -8,12 +8,12 @@ package entity;
  * 
  * @param playerName - The name of the player
  * @param boardPosition - The position of the piece on the board
+ * 
  */
 public class Piece {
 
 	String playerName;
 	int boardPosition;
-	int ID;
 	
 	public Piece(String playerName) {
 		this.playerName = playerName;
@@ -36,13 +36,4 @@ public class Piece {
 		this.boardPosition = boardPosition;
 	}
 
-	public int getID() {
-		return ID;
-	}
-
-	public void setID(int iD) {
-		ID = iD;
-	}
-	
-	
 }
