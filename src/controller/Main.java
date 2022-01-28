@@ -30,9 +30,7 @@ public class Main {
 		EventListener event;
 		
 		salService.play();
-		
-		//test
-		//ericTest
+
 		
 	}
 }

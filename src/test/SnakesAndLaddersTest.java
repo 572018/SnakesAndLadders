@@ -16,19 +16,6 @@ public class SnakesAndLaddersTest {
 	
 	static TextPrinter print;
 
-//	@Before
-//	public void setUp() throws Exception {
-//		salService = new SnakesAndLadderService();
-//		
-//		print = new TextPrinter();
-//		
-//		print.Welcome();
-//		
-//		SnakesAndLadders game = salService.setup();
-//		EventListener event;
-//		
-//		salService.play();
-//	}
 	
 	@Test
 	public void playerStartsInSquare1() throws Exception{
@@ -105,7 +92,7 @@ public class SnakesAndLaddersTest {
 //		Piece p = new Piece("Jonas");
 //		p.setBoardPosition(98);
 //		SnakesAndLadderService SLS = new SnakesAndLadderService();
-//
+//	pikk
 //	}
 	
 	
