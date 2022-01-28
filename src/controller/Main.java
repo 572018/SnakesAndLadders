@@ -2,7 +2,7 @@ package controller;
 
 import java.util.EventListener;
 
-import entity.*;
+import entity.SnakesAndLadders;
 import service.SnakesAndLadderService;
 import textInterface.TextPrinter;
 
@@ -32,6 +32,7 @@ public class Main {
 		salService.play();
 		
 		//test
+		//ericTest
 		
 	}
 }
