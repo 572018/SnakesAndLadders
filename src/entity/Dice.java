@@ -1,7 +1,5 @@
 package entity;
 
-import java.util.concurrent.ThreadLocalRandom;
-
 /**
  * 
  * @author janwi
@@ -18,6 +16,10 @@ public class Dice {
 		return value;
 	}
 	
+	/**
+	 * 
+	 * @param value assign a value to the dice (for test purposes)
+	 */
 	public void setValue(int value) {
 		this.value = value;
 	}

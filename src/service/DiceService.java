@@ -7,12 +7,17 @@ import java.util.concurrent.ThreadLocalRandom;
 import entity.Dice;
 import textInterface.TextPrinter;
 
+/**
+ * 
+ * @author janwi
+ * 
+ * Dice service rolls a number of dices and sums them up
+ */
 public class DiceService {
 
 	
 	public int rollDice() {
 		List<Dice> list = new ArrayList<Dice>();
-		TextPrinter print = new TextPrinter();
 		
 		//change 1 to number of dice if required
 		for(int i = 0; i < 1; i++) {

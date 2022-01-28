@@ -1,9 +1,13 @@
 package textInterface;
 
-import java.util.List;
-
-import entity.Dice;
 import entity.Piece;
+
+/**
+ * 
+ * @author janwi
+ *
+ * All text the interface prints
+ */
 
 public class TextPrinter {
 
