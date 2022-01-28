@@ -82,7 +82,7 @@ public class SnakesAndLaddersTest {
 		assertEquals(p.getBoardPosition(),6);
 	}
 	
-	//Player should stand still if position + dice roll is greater than 100(last position)
+	//Player should stand still if position + dice roll is greater than 100
 	@Test
 	public void standStillTest() throws Exception {
 		PieceService pieceService = new PieceService();
@@ -90,33 +90,24 @@ public class SnakesAndLaddersTest {
 		p.setBoardPosition(98);
 		
 		SnakesAndLadderService SLS = new SnakesAndLadderService();
-		SLS.playRound(p);
+		SLS.canMove(3,p);
 		
-//		pieceService.movePiece(3, p);
 		
 		
 		assertEquals(p.getBoardPosition(), 98);
 		
 	}
 	
-	
-	
+	//Player should be announced winner if it lands on square 100
 //	@Test
-//	public void ArrayPlayersStartsInSquare1() throws Exception{
-//		salService = new SnakesAndLadderService();
-//		print = new TextPrinter();
-//		
-//		print.Welcome();
-//		
-//		SnakesAndLadders game = salService.setup();
-//		EventListener event;
-//		
-//		
-//		List<Piece> players = game.getPlayers();
-//		assertArrayEquals(players.forEach(e -> e.getBoardPosition()),1);
-//		
+//	public void winnerTest() throws Exception {
+//		PieceService pieceService = new PieceService();
+//		Piece p = new Piece("Jonas");
+//		p.setBoardPosition(98);
+//		SnakesAndLadderService SLS = new SnakesAndLadderService();
 //
-//		
 //	}
+	
+	
 
 }
