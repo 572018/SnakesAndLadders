@@ -11,6 +11,7 @@ public class PieceService {
 	List<Piece> players;
 	
 	public void movePiece(int squares, Piece player) {
+		
 		player.setBoardPosition(player.getBoardPosition() + squares);
 	}
 	

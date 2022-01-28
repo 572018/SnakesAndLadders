@@ -1,8 +1,5 @@
 package textInterface;
 
-import java.util.List;
-
-import entity.Dice;
 import entity.Piece;
 
 public class TextPrinter {
@@ -14,7 +11,6 @@ public class TextPrinter {
 				+ "\nSkriv inn navn på spiller og trykk enter."
 				+ "\nSkriv 'spill for å starte når 2 eller flere spillere har navn"
 				+ "\nSkriv 'avslutt' når som helst for å avslutte");
-		//test
 		
 	}
 	
