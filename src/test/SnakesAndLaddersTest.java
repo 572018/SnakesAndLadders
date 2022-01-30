@@ -20,22 +20,12 @@ public class SnakesAndLaddersTest {
 	
 	static TextPrinter print;
 
-	
+	//Player should be in square 1 when created
 	@Test
 	public void playerStartsInSquare1() throws Exception{
-//		salService = new SnakesAndLadderService();
-//		print = new TextPrinter();
-//		
-//		print.Welcome();
-//		
-//		SnakesAndLadders game = salService.setup();
-//		EventListener event;
 		
 		Piece p = new Piece("Jonas");
-		
-//		List<Piece> players = game.getPlayers();
-//		assertArrayEquals(players.forEach(e -> e.getBoardPosition()),1);
-		
+	
 		assertEquals(p.getBoardPosition(),1);
 
 		
@@ -44,8 +34,6 @@ public class SnakesAndLaddersTest {
 	// player Should Be In Square 14 After Landing On Ladder on square 4
 	@Test
 	public void ladderTest() throws Exception {
-//		Dice dice = new Dice();
-//		dice.setValue(3);
 		
 		PieceService pieceService = new PieceService();
 		Piece p = new Piece("Jonas");
@@ -88,17 +76,6 @@ public class SnakesAndLaddersTest {
 		assertEquals(p.getBoardPosition(), 98);
 		
 	}
-	
-	//Player should be announced winner if it lands on square 100
-//	@Test
-//	public void winnerTest() throws Exception {
-//		PieceService pieceService = new PieceService();
-//		Piece p = new Piece("Jonas");
-//		p.setBoardPosition(98);
-//		SnakesAndLadderService SLS = new SnakesAndLadderService();
-//	pikk
-//	}
-	
 	
 
 }
