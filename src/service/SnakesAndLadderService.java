@@ -31,6 +31,10 @@ public class SnakesAndLadderService {
 		print = new TextPrinter();
 	}
 
+	/**
+	 * Setup for a game of Snakes and Ladder
+	 * @return SnakesAndLadders
+	 */
 	public SnakesAndLadders setup() {
 		SnakesAndLadders SaL = new SnakesAndLadders();
 
@@ -41,6 +45,9 @@ public class SnakesAndLadderService {
 		return SaL;
 	}
 
+	/**
+	 * Plays a game of Snakes and Ladders by going through a list of players 
+	 */
 	public void play() {
 
 		going = true;
@@ -55,6 +62,11 @@ public class SnakesAndLadderService {
 
 	}
 
+	/**
+	 * 
+	 * @param player - the player plays their round
+	 * @return boolean - if the game continues or stops. It stops when a winner is announced
+	 */
 	public boolean playRound(Piece player) {
 		int sum = diceService.rollDice();
 		
@@ -69,6 +81,10 @@ public class SnakesAndLadderService {
 		}
 	}
 
+	/**
+	 * Checks if a player is on a snake or ladder
+	 * @param player - the player's turn
+	 */
 	public void checkIfShortcut(Piece player) {
 		Map<Integer, Integer> cuts = shortcut.getShortcuts();
 		if (cuts.get(player.getBoardPosition()) != null) {
@@ -82,6 +98,13 @@ public class SnakesAndLadderService {
 		}
 	}
 
+	/**
+	 * checks if a player is able to move. 
+	 * A player cannot move past square 100
+	 * 
+	 * @param sum - the value on the dice
+	 * @param player - the player object
+	 */
 	public void canMove(int sum, Piece player) {
 		if (player.getBoardPosition() + sum <= 100) {
 			print.movePiece(sum, player);

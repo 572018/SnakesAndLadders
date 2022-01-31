@@ -16,6 +16,10 @@ import textInterface.TextPrinter;
 public class DiceService {
 
 	
+	/**
+	 * Roll a number of dice, here it is set to 1
+	 * @return return list<Dice> 
+	 */
 	public int rollDice() {
 		List<Dice> list = new ArrayList<Dice>();
 		

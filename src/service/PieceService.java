@@ -22,6 +22,11 @@ public class PieceService {
 		player.setBoardPosition(player.getBoardPosition() + squares);
 	}
 	
+	/**
+	 * Takes String input as name of a player.
+	 * 
+	 * @return list<Piece> name of players
+	 */
 	public List<Piece> namePlayers() {
 		
 		players = new ArrayList<Piece>();
