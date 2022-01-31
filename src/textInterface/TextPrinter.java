@@ -23,6 +23,8 @@ public class TextPrinter {
 	
 	public void PrintRoll(int sum) {
 		System.out.println("The dice show: " + sum);
+		
+		//Code for use of multiple dices
 //		list.stream().forEach(s ->  {
 //			System.out.println(s.getValue() + " ");
 //		});
